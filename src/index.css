@@ -7,11 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+ */
 .App {
   padding: 0;
 }
@@ -43,4 +43,8 @@ code {
 
 .Sidebar a:visited {
   color: #444;
+}
+
+.Sidebar .nav-item .active {
+  background-color: #def;
 }
