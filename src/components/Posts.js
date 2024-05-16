@@ -1,30 +1,14 @@
-import React from 'react'
+import { useState } from 'react';
+import Spinner from 'react-bootstrap/Spinner';
 
 function Posts() {
-    const posts = [
-        {
-          id: 1,
-          text: 'Hello, Farmer!',
-          timestap: 'a minute ago',
-          author: {
-            username: 'Madara',
-          },
-        },
-        {
-          id: 1,
-          text: 'Farmers Save Lives',
-          timestap: 'an hour ago',
-          author: {
-            username: 'Kakashi',
-          },
-        },
-    
-      ]
+    const [posts, setPosts ] = useState();
+
   return (
     <>
-        {posts.length === 0 ? 
-              <p>Posts Not Available Yet</p>
-            :
+      {posts === undefined ?
+        <Spinner animation="border" />
+        :
             posts.map(post => {
               return(
                 <p key={post.id}>
