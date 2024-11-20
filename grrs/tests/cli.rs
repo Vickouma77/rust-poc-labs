@@ -62,25 +62,6 @@ fn pattern_not_found_in_file() -> Result<(), Box<dyn std::error::Error>> {
     Ok(())
 }
 
-
-// #[test]
-// fn multiple_matches_in_file() -> Result<(), Box<dyn std::error::Error>> {
-//     let file = assert_fs::NamedTempFile::new("sample.txt")?;
-//     file.write_str("Match here\nAnother match\nYet another match\nMatch here again")?;
-
-//     let mut cmd = Command::cargo_bin("grrs")?;
-//     cmd.arg("match").arg(file.path());
-//     cmd.assert()
-//         .success()
-//         .stdout(predicate::str::contains("Match here")
-//             .and(predicate::str::contains("Another match"))
-//             .and(predicate::str::contains("Yet another match"))
-//             .and(predicate::str::contains("Match here again")));
-
-//     Ok(())
-// }
-
-
 #[test]
 fn special_characters_in_file() -> Result<(), Box<dyn std::error::Error>> {
     let file = assert_fs::NamedTempFile::new("sample.txt")?;
