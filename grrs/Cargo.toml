@@ -2,6 +2,14 @@
 name = "grrs"
 version = "0.1.0"
 edition = "2021"
+authors = [Vick Prestone <Vickprestone20@gmail.com>]
+license = "MIT"
+description = "A simple implementation of grep in Rust"
+readme = "README.md"
+homepage = "https://github.com/Vickouma77/rust-poc-labs/tree/main/grrs"
+repository = "https://github.com/Vickouma77/rust-poc-labs/tree/main/grrs"
+keywords = ["grep", "rust", "cli", "demo"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 clap = { version = "4.0", features = ["derive"] }
