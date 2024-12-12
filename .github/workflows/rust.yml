@@ -16,6 +16,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Navigate to grrs directory
+      working-directory: ./grrs
     - name: Build
       run: cargo build --verbose
     - name: Run tests
