@@ -2,7 +2,7 @@
 name = "grrs"
 version = "0.1.0"
 edition = "2021"
-authors = [Vick Prestone <Vickprestone20@gmail.com>]
+authors = ["Vick Prestone <Vickprestone20@gmail.com>"]
 license = "MIT"
 description = "A simple implementation of grep in Rust"
 readme = "README.md"
